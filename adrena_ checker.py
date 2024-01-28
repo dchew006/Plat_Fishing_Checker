@@ -4,7 +4,11 @@ from dataclasses import dataclass
 # ignore warnings
 import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+import os
 
+### SECRET VARS ###
+CHAT_ID = os.environ.get('CHAT_ID')
+TOKEN = os.environ.get('TOKEN')
 
 def website_query(site):
     '''
@@ -84,8 +88,8 @@ def tele_messenger(bool_switch, product):
     '''
     
     if bool_switch == True:
-        API_Token = "5540927751:AAGnJ0w-LdDfjFwJJ1TLIr1RbGChB1w-lug"
-        chat = "133014085"
+        API_Token = TOKEN
+        chat = CHAT_ID
 
         Price = product.PRICE
         Discount = product.DISCOUNT
