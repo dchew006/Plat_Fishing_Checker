@@ -95,7 +95,7 @@ def tele_messenger(bool_switch, product):
         Discount = product.DISCOUNT
         Discount_Perct = product.DISCOUNT_PERCT
 
-        message = 'Poison Adrena 164L BFS-2\nPrice: {}\nDiscount: {}\nDiscount Percentage: {}'.format(
+        message = 'Shimano Metanium 71DC XG\nPrice: {}\nDiscount: {}\nDiscount Percentage: {}'.format(
             Price, Discount, Discount_Perct)
 
         url = f'https://api.telegram.org/bot{API_Token}/sendMessage?chat_id={chat}&text={message}'
@@ -113,7 +113,7 @@ def main():
     '''
     
     xpath_query = xpath_query = "//div[@class='text-right']"
-    site = 'https://www.plat.co.jp/shop/catalog/product_info/language/en/products_id/74631/shimano-2024-poison-adrena-164l-bfs-2-shipping-is-required.html' 
+    site = 'https://www.plat.co.jp/shop/catalog/product_info/language/en/products_id/74581/cPath/4027_85_8147/reel/shimano-2024-metanium-dc-71xg-left-handle-free-shipping.html' 
     
     response = website_query(site)
     element = get_element(response, xpath_query)
