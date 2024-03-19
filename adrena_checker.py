@@ -95,7 +95,7 @@ def tele_messenger(bool_switch, product):
         Discount = product.DISCOUNT
         Discount_Perct = product.DISCOUNT_PERCT
 
-        message = 'Shimano Metanium 71DC XG\nPrice: {}\nDiscount: {}\nDiscount Percentage: {}'.format(
+        message = 'Poison Adrena 164L BFS-2\nPrice: {}\nDiscount: {}\nDiscount Percentage: {}'.format(
             Price, Discount, Discount_Perct)
 
         url = f'https://api.telegram.org/bot{API_Token}/sendMessage?chat_id={chat}&text={message}'
