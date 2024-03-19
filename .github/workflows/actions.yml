@@ -1,4 +1,4 @@
-name: run adrena_checker.py
+name: run metanium_checker.py
 
 on:
   workflow_dispatch:
@@ -27,7 +27,7 @@ jobs:
         env:
           CHAT_ID: ${{ secrets.CHAT_ID }}
           TOKEN: ${{ secrets.TOKEN }}
-        run: python adrena_checker.py
+        run: python metanium_checker.py
           
       - name: commit files
         run: |
